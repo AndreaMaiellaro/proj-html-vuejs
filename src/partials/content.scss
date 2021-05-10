@@ -1,0 +1,155 @@
+//navbar
+
+nav {
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    width: 10%;
+}
+
+.menu {
+    width: 85%;
+    text-align: right;
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.square {
+    width: 5%;
+}
+
+//jumbotron
+
+.jumbotron {
+    display: flex;
+    padding: 50px;
+
+    img {
+        width: 300px;
+    }
+}
+
+.jb-left {
+    width: 50%;
+
+    button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border: 2px solid #e1c0b0;
+        cursor: pointer;
+    }
+}
+
+.jb-right {
+    width: 50%;
+}
+
+//images
+
+.top-row {
+    display: flex;
+
+    img {
+        width: calc( 100% / 3 );
+    }
+}
+
+.bottom-row {
+    display: flex;
+
+    img {
+        width: calc( 100% / 3 );
+    }
+}
+
+//infos
+
+//lamp
+
+.process {
+    padding: 80px;
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+.bg-process {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.infos {
+    width: 15%;
+    padding: 20px;
+}
+
+.circle {
+    background-color: #FAF7F1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+
+    i {
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    #bulb {
+        color: #badac9;
+    }
+
+    #comment {
+        color: #f8d12d;
+    }
+
+    #cloud {
+        color: #80465f;
+    }
+
+    #pen {
+        color: #eb6950;
+    }
+}
+
+//contact
+
+.contact {
+    background-color: #faf7f1;
+    text-align: center;
+    padding: 80px;
+
+    button {
+        background-color: #c0e1cf;
+        border: 1px solid #c0e1cf;
+        color: black;
+        padding: 15px 50px;
+        cursor: pointer;
+    }
+}
+
+//calendar
+
+.calendar {
+    display: flex;
+    justify-content: center;
+}
+
+.blog {
+    padding: 30px;
+    text-align: center;
+
+    img {
+        width: 300px;
+    }
+}

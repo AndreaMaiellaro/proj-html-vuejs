@@ -1,1 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+nav {
+  display: flex;
+  padding: 20px;
+}
+
+.logo {
+  width: 10%;
+}
+
+.menu {
+  width: 85%;
+  text-align: right;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.square {
+  width: 5%;
+}
+
+.jumbotron {
+  display: flex;
+  padding: 50px;
+}
+.jumbotron img {
+  width: 300px;
+}
+
+.jb-left {
+  width: 50%;
+}
+.jb-left button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #e1c0b0;
+  cursor: pointer;
+}
+
+.jb-right {
+  width: 50%;
+}
+
+.top-row {
+  display: flex;
+}
+.top-row img {
+  width: calc( 100% / 3 );
+}
+
+.bottom-row {
+  display: flex;
+}
+.bottom-row img {
+  width: calc( 100% / 3 );
+}
+
+.process {
+  padding: 80px;
+}
+.process h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.bg-process {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.infos {
+  width: 15%;
+  padding: 20px;
+}
+
+.circle {
+  background-color: #FAF7F1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.circle i {
+  line-height: 100px;
+  font-size: 30px;
+}
+.circle #bulb {
+  color: #badac9;
+}
+.circle #comment {
+  color: #f8d12d;
+}
+.circle #cloud {
+  color: #80465f;
+}
+.circle #pen {
+  color: #eb6950;
+}
+
+.contact {
+  background-color: #faf7f1;
+  text-align: center;
+  padding: 80px;
+}
+.contact button {
+  background-color: #c0e1cf;
+  border: 1px solid #c0e1cf;
+  color: black;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.blog {
+  padding: 30px;
+  text-align: center;
+}
+.blog img {
+  width: 300px;
+}
