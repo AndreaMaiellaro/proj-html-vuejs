@@ -37,7 +37,14 @@ nav {
 }
 
 .jb-left {
-  width: 50%;
+  width: 45%;
+}
+.jb-left h2 {
+  font-size: 50px;
+}
+.jb-left p {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .jb-left button {
   padding: 10px 20px;
@@ -47,7 +54,25 @@ nav {
 }
 
 .jb-right {
-  width: 50%;
+  width: 45%;
+}
+
+.chevron {
+  width: 5%;
+  font-size: 25px;
+  color: #f5d8ca;
+  line-height: 400px;
+  cursor: pointer;
+}
+
+.slider-circles {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 10px;
+  color: #f5d8ca;
+}
+.slider-circles .fa-circle {
+  padding: 10px;
 }
 
 .top-row {
@@ -55,6 +80,7 @@ nav {
 }
 .top-row img {
   width: calc( 100% / 3 );
+  position: relative;
 }
 
 .bottom-row {
@@ -62,6 +88,7 @@ nav {
 }
 .bottom-row img {
   width: calc( 100% / 3 );
+  position: relative;
 }
 
 .process {
@@ -109,14 +136,26 @@ nav {
 }
 
 .contact {
-  background-color: #faf7f1;
+  background-image: url("../img/h-2-background-1.jpg");
   text-align: center;
   padding: 80px;
+}
+.contact h2 {
+  font-size: 50px;
+}
+.contact p {
+  padding: 30px;
 }
 .contact button {
   background-color: #c0e1cf;
   border: 1px solid #c0e1cf;
   color: black;
+  padding: 15px 50px;
+}
+.contact button:hover {
+  background-color: #e1c0b0;
+  border: 1px solid #e1c0b0;
+  color: white;
   padding: 15px 50px;
   cursor: pointer;
 }
@@ -124,12 +163,25 @@ nav {
 .calendar {
   display: flex;
   justify-content: center;
+  padding: 80px;
 }
 
 .blog {
-  padding: 30px;
-  text-align: center;
+  padding: 20px;
+  text-align: left;
 }
 .blog img {
   width: 300px;
+}
+.blog h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+footer {
+  background-color: #c0e1cf;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
 }
