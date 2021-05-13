@@ -191,6 +191,9 @@ nav {
   width: 15%;
   padding: 20px;
 }
+.infos h4 {
+  padding: 15px;
+}
 
 .circle {
   background-color: #FAF7F1;

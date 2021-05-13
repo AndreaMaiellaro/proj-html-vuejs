@@ -218,6 +218,10 @@ nav {
 .infos {
     width: 15%;
     padding: 20px;
+
+    h4 {
+        padding: 15px;
+    }
 }
 
 .circle {
@@ -362,41 +366,5 @@ footer {
     i {
         padding: 10px;
         cursor: pointer;
-    }
-}
-
-//laterale
-
-body {
-    position: relative;
-}
-
-.lato {
-    position: fixed;
-    right: 0;
-    top: 500px;
-
-    .white {
-        background-color: #fffffff2;
-        color: #ee2852;
-        text-align: center;
-        margin-bottom: 5px;
-
-        img {
-            width: 10px;
-            padding: 10px;
-        }
-    }
-
-    .red {
-        background-color: #ee2852;
-        color: white;
-        text-align: center;
-
-        img {
-            width: 10px;
-            padding: 10px;
-            display: block;
-        }
     }
 }
