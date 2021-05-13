@@ -171,14 +171,13 @@ nav {
         background-color: #c0e1cf;
         border: 1px solid #c0e1cf;
         color: black;
-        padding: 15px 50px;
+        padding: 15px 60px;
     }
 
     button:hover {
         background-color: #e1c0b0;
         border: 1px solid #e1c0b0;
         color: white;
-        padding: 15px 50px;
         cursor: pointer;
     }
 }
@@ -213,4 +212,16 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 80px;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    i {
+        padding: 10px;
+    }
 }
