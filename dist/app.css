@@ -42,6 +42,9 @@ nav {
 .jb-left h2 {
   font-size: 50px;
 }
+.jb-left h2 span {
+  font-style: oblique;
+}
 .jb-left p {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -78,17 +81,55 @@ nav {
 .top-row {
   display: flex;
 }
-.top-row img {
+.top-row .book-cover {
   width: calc( 100% / 3 );
   position: relative;
+}
+.top-row .book-cover img {
+  width: 100%;
+}
+.top-row .book-cover .white-box {
+  display: none;
+}
+.top-row .book-cover:hover .white-box {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding: 20px 50px;
+  top: 50%;
+}
+.top-row .book-cover:hover .white-box h3 {
+  padding: 10px;
+}
+.top-row .book-cover:hover .white-box span {
+  padding: 10px;
 }
 
 .bottom-row {
   display: flex;
 }
-.bottom-row img {
+.bottom-row .book-cover {
   width: calc( 100% / 3 );
   position: relative;
+}
+.bottom-row .book-cover img {
+  width: 100%;
+}
+.bottom-row .book-cover .white-box {
+  display: none;
+}
+.bottom-row .book-cover:hover .white-box {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding: 20px 50px;
+  top: 50%;
+}
+.bottom-row .book-cover:hover .white-box h3 {
+  padding: 10px;
+}
+.bottom-row .book-cover:hover .white-box span {
+  padding: 10px;
 }
 
 .process {
@@ -97,6 +138,9 @@ nav {
 .process h2 {
   text-align: center;
   font-size: 50px;
+}
+.process h2 span {
+  font-style: oblique;
 }
 
 .bg-process {
@@ -143,6 +187,9 @@ nav {
 .contact h2 {
   font-size: 50px;
 }
+.contact h2 span {
+  font-style: oblique;
+}
 .contact p {
   padding: 30px;
 }
@@ -168,6 +215,7 @@ nav {
 .blog {
   padding: 20px;
   text-align: left;
+  position: relative;
 }
 .blog img {
   width: 300px;
@@ -177,12 +225,33 @@ nav {
   margin-bottom: 10px;
   width: 300px;
 }
+.blog .date {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  background-color: #badac9;
+  text-align: center;
+}
+.blog .date #day {
+  font-style: oblique;
+  font-size: 30px;
+  font-weight: bold;
+}
+.blog .date #month {
+  background-color: #f5d8ca;
+  display: block;
+  padding: 3px;
+}
 
 footer {
   background-color: #c0e1cf;
+  padding: 80px;
+}
+footer .container {
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 80px;
 }
 footer ul {
   list-style-type: none;

@@ -43,7 +43,7 @@
                 <i class="fas chevron fa-chevron-circle-left"></i>
 
                 <div class="jb-left">
-                    <h2>Devotion that never ends</h2>
+                    <h2>Devotion that never <span>ends</span></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Neque earum debitis consectetur adipisicing elit. 
@@ -74,21 +74,58 @@
             <div class="images">
 
                 <div class="top-row">
-                    <img src="img/h-2-port-img-1.jpg" alt="#">
-                    <img src="img/h-2-port-img-2.jpg" alt="#">
-                    <img src="img/h-2-port-img-3.jpg" alt="#">
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-1.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-2.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-3.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bottom-row">
-                    <img src="img/h-2-port-img-4.jpg" alt="#">
-                    <img src="img/h-2-port-img-5.jpg" alt="#">
-                    <img src="img/h-2-port-img-6.jpg" alt="#">
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-4.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-5.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
+                    <div class="book-cover">
+                        <img src="img/h-2-port-img-6.jpg" alt="#">
+                        <div class="white-box">
+                            <h3>Illustration of novels</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
             <div class="process">
-                <h2>Working process</h2>
+                <h2>Working <span>process</span></h2>
 
                 <div class="bg-process">
 
@@ -127,8 +164,8 @@
                 </div>
             </div>
 
-            <div class="contact">
-                <h2>Want to work with us? Send us a message!</h2>
+            <div class="contact"> 
+                <h2>Want to work with us? Send us <span>a message!</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio similique reiciendis sit dolorem dignissimos! Eligendi atque aliquid molestias ipsam id nam aut incidunt quas voluptates voluptatem, deleniti architecto quae?</p>
                 <button>Contact</button>
             </div>
@@ -139,18 +176,33 @@
                     <img src="img/h-2-blog-img-1.jpg" alt="#">
                     <h3>This way, loves: a detailed guide through new design</h3>
                     <span>by Emily Fields</span>
+
+                    <div class="date">
+                        <span id="day">07</span>
+                        <span id="month">May '19</span>
+                    </div>
                 </div>
 
                 <div class="blog">
                     <img src="img/h-2-blog-img-2.jpg" alt="#">
                     <h3>I try to give people a different way of looking art</h3>
                     <span>by Emily Fields</span>
+
+                    <div class="date">
+                        <span id="day">07</span>
+                        <span id="month">May '19</span>
+                    </div>
                 </div>
 
                 <div class="blog">
                     <img src="img/h-2-blog-img-3.jpg" alt="#">
                     <h3>Introduce Richard Laperrière of those amazing features</h3>
                     <span>by Emily Fields</span>
+
+                    <div class="date">
+                        <span id="day">07</span>
+                        <span id="month">May '19</span>
+                    </div>
                 </div>
                 
             </div>
@@ -159,34 +211,38 @@
 
         <footer>
 
-            <div>
-                <img src="img/logo-sidearea-1-1.png" alt="">
-            </div>
+            <div class="container">
 
-            <div>
-                <ul>
-                    <li v-for="contact in contacts">
-                        {{ contact }}
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li v-for="adress in adresses">
-                        {{ adress }}
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <span>Stay in touch with us</span>
                 <div>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                    <img src="img/logo-sidearea-1-1.png" alt="">
                 </div>
+    
+                <div>
+                    <ul>
+                        <li v-for="contact in contacts">
+                            {{ contact }}
+                        </li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li v-for="adress in adresses">
+                            {{ adress }}
+                        </li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <span>Stay in touch with us</span>
+                    <div>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>    
+
             </div>
 
         </footer>

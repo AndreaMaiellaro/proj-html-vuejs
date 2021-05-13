@@ -40,6 +40,10 @@ nav {
 
     h2 {
         font-size: 50px;
+
+        span {
+            font-style: oblique;
+        }
     }
 
     p {
@@ -83,18 +87,66 @@ nav {
 .top-row {
     display: flex;
 
-    img {
+    .book-cover {
         width: calc( 100% / 3 );
         position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .white-box {
+            display: none;
+        }
+    }
+
+    .book-cover:hover .white-box {
+        display: block;
+        position: absolute;
+        background-color: white;
+        padding: 20px 50px;
+        top: 50%;
+
+        h3 {
+            padding: 10px;
+        }
+
+        span {
+            padding: 10px;
+        }
     }
 }
 
 .bottom-row {
     display: flex;
 
-    img {
+    .book-cover {
         width: calc( 100% / 3 );
         position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .white-box {
+            display: none;
+        }
+    }
+
+    .book-cover:hover .white-box {
+        display: block;
+        position: absolute;
+        background-color: white;
+        padding: 20px 50px;
+        top: 50%;
+
+        h3 {
+            padding: 10px;
+        }
+
+        span {
+            padding: 10px;
+        }
     }
 }
 
@@ -108,6 +160,10 @@ nav {
     h2 {
         text-align: center;
         font-size: 50px;
+
+        span {
+            font-style: oblique;
+        }
     }
 }
 
@@ -161,6 +217,10 @@ nav {
 
     h2 {
         font-size: 50px;
+
+        span {
+            font-style: oblique;
+        }
     }
 
     p {
@@ -193,6 +253,7 @@ nav {
 .blog {
     padding: 20px;
     text-align: left;
+    position: relative;
 
     img {
         width: 300px;
@@ -203,15 +264,40 @@ nav {
         margin-bottom: 10px;
         width: 300px;
     }
+
+    .date {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        background-color: #badac9;
+        text-align: center;
+
+        #day {
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #month {
+            background-color: #f5d8ca;
+            display: block;
+            padding: 3px;
+        }
+    }
 }
 
 //footer
 
 footer {
     background-color: #c0e1cf;
-    display: flex;
-    justify-content: space-between;
     padding: 80px;
+
+    .container {
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 
     ul {
         list-style-type: none;
