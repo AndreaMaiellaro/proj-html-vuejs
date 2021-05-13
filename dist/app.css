@@ -39,17 +39,21 @@ nav {
 .jb-left {
   width: 45%;
 }
-.jb-left h2 {
+.jb-left .testo {
+  width: 50%;
+  float: right;
+}
+.jb-left .testo h2 {
   font-size: 50px;
 }
-.jb-left h2 span {
+.jb-left .testo h2 span {
   font-style: oblique;
 }
-.jb-left p {
+.jb-left .testo p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.jb-left button {
+.jb-left .testo button {
   padding: 10px 20px;
   background-color: #ffffff;
   border: 2px solid #e1c0b0;
@@ -118,6 +122,24 @@ nav {
 .bottom-row .book-cover .white-box {
   display: none;
 }
+.bottom-row .book-cover .return-top {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #c0e1cf;
+  top: 0px;
+  right: 20px;
+}
+.bottom-row .book-cover .return {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #c0e1cf;
+  bottom: 40px;
+  right: 20px;
+}
 .bottom-row .book-cover:hover .white-box {
   display: block;
   position: absolute;
@@ -134,6 +156,7 @@ nav {
 
 .process {
   padding: 80px;
+  position: relative;
 }
 .process h2 {
   text-align: center;
@@ -142,12 +165,26 @@ nav {
 .process h2 span {
   font-style: oblique;
 }
+.process .return {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #c0e1cf;
+  bottom: 40px;
+  right: 20px;
+}
 
 .bg-process {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 30px;
+  background-image: url("../img/svg-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: 0px;
 }
 
 .infos {
@@ -209,7 +246,17 @@ nav {
 .calendar {
   display: flex;
   justify-content: center;
+  position: relative;
   padding: 80px;
+}
+.calendar .return {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #c0e1cf;
+  top: 40px;
+  right: 20px;
 }
 
 .blog {
@@ -261,4 +308,35 @@ footer li {
 }
 footer i {
   padding: 10px;
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+
+.lato {
+  position: fixed;
+  right: 0;
+  top: 500px;
+}
+.lato .white {
+  background-color: #fffffff2;
+  color: #ee2852;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.lato .white img {
+  width: 10px;
+  padding: 10px;
+}
+.lato .red {
+  background-color: #ee2852;
+  color: white;
+  text-align: center;
+}
+.lato .red img {
+  width: 10px;
+  padding: 10px;
+  display: block;
 }
